@@ -1,0 +1,19 @@
+create table stock(
+int order_id,varchar stock_name);
+insert into stock(1,'l&t');
+insert into stock(2,'dbs');
+insert into stock(3,'amazon');
+
+
+create table customer(
+varchar cust_id,varchar customer_name,varchar password);
+insert into customer(abc123,'ryan',#123#);
+insert into customer(abc234,'ayan',#234#);
+insert into customer(abc345,'mayan',qwerty);
+
+
+create table order(
+int order_id,varchar cust_id,int quantity,date order_date,varchar order_type,varchar order_status,int price);
+insert into order(1,'abc123',50,2021-12-12,'MARKET',PLACED," ");
+insert into order(2,'abc234',100,2021-12-20,'LIMIT',PENDING,"200");
+insert into order(1,'abc345',50,2021-12-25,'LIMIT',REJECTED,"150");
