@@ -1,1 +1,168 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+<link rel="stylesheet" type="text/css" href="./index.css"/>
+</head>    
+<body>       
+        <form action="customerscreen.html">
+            <center><h1>  Login  </h1></center>   
+            <div class="container"> 
+                <label>Login Details</label>
+                <select name="Login" id="Login">
+                    <option value="Admin Login">Admin Login</option>
+                    <option value="Customer Login">Customer Login</option>
+                </select><br> 
+                <label>Username : </label>   
+                <input type="text" placeholder="Enter Username" name="username" required><br>  
+                <label>Password : </label>   
+                <input type="password" placeholder="Enter Password" name="password" required><br>  
+                <button style="width: 10%;" type="submit">Login</button><br>
+                <script>
+                    function myFunction() {
+                    window.location.href="C:\Users\Rahul Pittala\Desktop\Hackthon\customerscreen.html";  
+                    }
+                </script>
+                <input type="checkbox" checked="checked"> Remember me   
+                <button type="button" class="cancelbtn" >Cancel</button>   
+                Forgot <a href="#"> password? </a>   
+            </div>   
+        </form>     
+</body>     
+</html> 
+
+
+
+  
+Body {  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;  
+  background-color:white;
+  
+} 
+button {   
+       background-color: #4CAF50;   
+       width: 30%;  
+        color: orange;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;
+}   
+form {   
+        text-align: center;
+        border: 3px solid #d11f2e;
+        
+           
+}   
+input[type=text], input[type=password] {   
+        width: 25%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+}  
+button:hover {   
+        opacity: 0.7;   
+}   
+.cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+}    
+.container {   
+        padding: 20px;
+          
+        background-color:white;
+}   
+ 
+ 
+ 
+ <!DOCTYPE html>
+<html>
+    <title>Order Book System</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./customerscreen.css"/>   
+    <body>
+    <form>
+            <h1>Order Book System</h1>
+            <label ><strong>Search Stock</strong></label><br>
+            <select name="Search Stock" id="Search Stock">
+                <option value="DBS">DBS</option>
+                <option value="Wipro">Wipro</option>
+                <option value="Infosys">Infosys</option>
+            </select><br><br>
+            <label><strong>Order Type</strong></label><br>
+            <select name="Order Type" id="Order Type">
+                <option value="Market" id="market">Market</option>
+                <option value="Limit"  id="Limit">Limit</option>
+            </select><br><br>
+            <label><strong>Price</strong></label><br>
+            <input type=number id="price"><br><br>
+            <label><strong>Quantity</strong></label><br>
+            <input type=number id="quantity"><br><br>
+            <script>
+                function checkNegativeValue()
+                {
+                    var value = parseFloat(document.getElementById("price").value);
+                    var value1 = parseFloat(document.getElementById("quantity").value);
+                    if(value<0)
+                    {
+                        //alert("Negative Value is not allowed");
+                        <button type="button" onclick="checkNegativeValue()" disabled>Place Order</button>
+                        return false;
+                    }
+                    if(value1<0)
+                    {
+                        //alert("Negative Value is not allowed");
+                        <button type="button" onclick="checkNegativeValue()" disabled>Place Order</button>
+                        return false;
+                    }
+                }
+            </script>
+            <button type="button" onclick="checkNegativeValue()">Place Order</button>
+    </form>
+    
+    </body>
+</html>
+
+
+
+
+
+
+body {  
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;  
+        background-color:white;
+}  
+button {   
+        background-color: red;   
+        width: 25%;  
+        color:white;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;
+}   
+form {   
+        text-align: center;
+        border: 3px solid #eff0ed;   
+}   
+input[type=number],select{   
+    width: 25%;   
+    margin: 8px 0;  
+    padding: 12px 20px;   
+    display: inline-block;   
+    border: 2px solid green;   
+    box-sizing: border-box;   
+}  
+button:hover {   
+    opacity: 0.7;   
+    }     
+.container {   
+    padding: 20px;   
+    background-color: lightblue;  
+}
+
 
